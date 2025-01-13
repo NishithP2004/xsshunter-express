@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3.3"
 services:
   # XSS Hunter Express service
   xsshunterexpress:
@@ -42,8 +42,8 @@ services:
       - DATABASE_HOST=postgresdb
       - NODE_ENV=production
     ports:
-      - "80:80"
-      - "443:443"
+      - "8080:80"
+      - "8443:443"
     volumes:
       # Stores the SSL/TLS certificates and keys
       # in the "ssldata" directory.
